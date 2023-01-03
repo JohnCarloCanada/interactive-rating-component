@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --ORANGE: #fb7413;
+  /* Neutral */
+  --WHITE: #ffffff;
+  --LIGHT-GREY: #959eac;
+  --MEDIUM-GREY: #7c8798;
+  --DARK-BLUE: #252d37;
+  --VERY-DARK-BLUE: #121417;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--VERY-DARK-BLUE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  background-color: var(--DARK-BLUE);
+  padding: 2em;
+  border-radius: 25px;
+}
+
+.card__star {
+  background-color: var(--DARK-BLUE);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px var(--VERY-DARK-BLUE);
+  margin-bottom: 1rem;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.description__h1 {
+  color: var(--WHITE);
+  font-size: clamp(1.5rem, 0.5474rem + 1.7493vw, 1.75rem);
+}
+
+.description__p {
+  color: var(--MEDIUM-GREY);
+  font-size: clamp(0.75rem, 0.3125rem + 1vw, 1rem);
+}
+
+.card__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.rating__button {
+  color: var(--LIGHT-GREY);
+  background-color: var(--DARK-BLUE);
+  padding: 15px 23px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px var(--VERY-DARK-BLUE);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.rating__btn__active__style {
+  background-color: var(--ORANGE);
+  color: var(--WHITE);
+}
+.rating__button:hover,
+.rating__button:focus {
+  background-color: var(--LIGHT-GREY);
+  color: var(--WHITE);
+}
+
+.card__submit {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--WHITE);
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  border-radius: 25px;
+  background-color: var(--ORANGE);
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+}
+
+.card__submit:hover,
+.card__submit:focus {
+  background-color: var(--WHITE);
+  color: var(--ORANGE);
+}
+
+.thankyou__section {
+  position: absolute;
+  width: 400px;
+  background-color: var(--DARK-BLUE);
+  padding: 2em;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: -9000px;
+}
+
+.isActive {
+  margin-left: 0px;
+  transition: all ease;
+  transition-delay: 2s;
+}
+
+.thankyou__illustration {
+  margin-bottom: 1.5em;
+  width: 200px;
+}
+.rating__section {
+  padding: 5px 15px;
+  border-radius: 25px;
+  box-shadow: 0 0 3px var(--VERY-DARK-BLUE);
+  color: var(--ORANGE);
+  margin-bottom: 1.5em;
+}
+
+.ty__h2 {
+  color: var(--WHITE);
+  font-size: clamp(1.5rem, 0.5474rem + 1.7493vw, 1.75rem);
+}
+.ty__p {
+  color: var(--MEDIUM-GREY);
+  font-size: clamp(0.75rem, 0.3125rem + 1vw, 1rem);
+}
